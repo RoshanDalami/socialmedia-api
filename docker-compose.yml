@@ -1,0 +1,12 @@
+
+version: '3.8'
+services:
+  app: 
+    build: .
+    container_name: softech-ai-social
+    ports:
+      - "8022:8022"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+		
